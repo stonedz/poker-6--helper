@@ -1,5 +1,6 @@
 """Scenario mapping and recommendation lookup for the MVP."""
 
+import sys
 from functools import lru_cache
 from json import load
 from pathlib import Path
@@ -19,25 +20,28 @@ DISPLAY_MIN_PERCENT = 1.0
 
 @lru_cache(maxsize=1)
 def load_strategy_data() -> dict:
-    # prefer package data next to this module
+    candidates: list[Path] = []
+
     package_path = Path(__file__).resolve().parent / "data" / "preflop_scenarios.json"
+    candidates.append(package_path)
 
-    # when bundled as an executable (PyInstaller / frozen), look next to the executable
-    exe_path = None
-    try:
-        import sys
+    bundle_dir = getattr(sys, "_MEIPASS", None)
+    if bundle_dir:
+        candidates.append(Path(bundle_dir) / "shortdeck_cli" / "data" / "preflop_scenarios.json")
+        candidates.append(Path(bundle_dir) / "data" / "preflop_scenarios.json")
 
-        if getattr(sys, "frozen", False):
-            exe_path = Path(sys.executable).resolve().parent / "data" / "preflop_scenarios.json"
-        # also allow falling back to the executable directory on Windows if the package path doesn't exist
-        elif sys.platform == "win32":
-            alt = Path(sys.executable).resolve().parent / "data" / "preflop_scenarios.json"
-            if alt.exists():
-                exe_path = alt
-    except Exception:
-        exe_path = None
+    exe_dir = Path(sys.executable).resolve().parent
+    candidates.append(exe_dir / "shortdeck_cli" / "data" / "preflop_scenarios.json")
+    candidates.append(exe_dir / "data" / "preflop_scenarios.json")
 
-    file_path = exe_path if exe_path and exe_path.exists() else package_path
+    file_path = next((candidate for candidate in candidates if candidate.exists()), None)
+    if file_path is None:
+        searched = "\n".join(str(candidate) for candidate in candidates)
+        raise FileNotFoundError(
+            "Could not locate preflop_scenarios.json. Searched:\n"
+            f"{searched}"
+        )
+
     with file_path.open("r", encoding="utf-8") as data_file:
         return load(data_file)
 

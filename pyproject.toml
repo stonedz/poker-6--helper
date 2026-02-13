@@ -10,6 +10,12 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
 
+[project.optional-dependencies]
+windows-capture = [
+	"Pillow>=10.0.0",
+	"pytesseract>=0.3.10",
+]
+
 [project.scripts]
 shortdeck-cli = "shortdeck_cli.cli:cli_main"
 

@@ -6,6 +6,7 @@ import time
 from shortdeck_cli.auto_ingest import JsonlObservationSource, Observation, ObservationSource
 from shortdeck_cli.evaluator import recommend_action
 from shortdeck_cli.parser import parse_action, parse_flop_cards, parse_hand, parse_position, parse_turn_card
+from shortdeck_cli.pokerstars_capture import PokerStarsWindowOcrSource
 from shortdeck_cli.postflop import analyze_flop, analyze_turn
 from shortdeck_cli.rules import ACTIONS, POSITIONS, previous_positions
 
@@ -373,8 +374,38 @@ def cli_main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Short Deck CLI")
     parser.add_argument("--auto", action="store_true", help="Run in non-interactive auto-ingest mode")
     parser.add_argument(
+        "--auto-source",
+        choices=("jsonl", "pokerstars"),
+        default="jsonl",
+        help="Observation source backend for auto mode",
+    )
+    parser.add_argument(
         "--auto-source-jsonl",
         help="Path to JSONL file containing observed hands/actions (one JSON object per line)",
+    )
+    parser.add_argument(
+        "--auto-hero-position",
+        help="Hero position for pokerstars OCR source (UTG/MP1/MP2/HJ/CO/BTN)",
+    )
+    parser.add_argument(
+        "--auto-window-title",
+        default="PokerStars",
+        help="Window title substring for pokerstars OCR source",
+    )
+    parser.add_argument(
+        "--auto-debug-dir",
+        default=None,
+        help="Optional directory to save captured frames and OCR text for debugging",
+    )
+    parser.add_argument(
+        "--auto-roi-config",
+        default=None,
+        help="Optional JSON file defining ROI regions for hero_hand and action_log OCR",
+    )
+    parser.add_argument(
+        "--auto-tesseract-cmd",
+        default=None,
+        help="Optional absolute path to tesseract executable",
     )
     parser.add_argument(
         "--auto-poll-seconds",
@@ -392,9 +423,20 @@ def cli_main(argv: list[str] | None = None) -> None:
     args = parser.parse_args(argv)
 
     if args.auto:
-        if not args.auto_source_jsonl:
-            parser.error("--auto-source-jsonl is required when --auto is used")
-        source = JsonlObservationSource(args.auto_source_jsonl)
+        if args.auto_source == "jsonl":
+            if not args.auto_source_jsonl:
+                parser.error("--auto-source-jsonl is required when --auto-source jsonl is used")
+            source: ObservationSource = JsonlObservationSource(args.auto_source_jsonl)
+        else:
+            if not args.auto_hero_position:
+                parser.error("--auto-hero-position is required when --auto-source pokerstars is used")
+            source = PokerStarsWindowOcrSource(
+                hero_position=args.auto_hero_position,
+                window_title_contains=args.auto_window_title,
+                tesseract_cmd=args.auto_tesseract_cmd,
+                debug_dir=args.auto_debug_dir,
+                roi_config_path=args.auto_roi_config,
+            )
         run_auto_mode(source=source, poll_seconds=args.auto_poll_seconds, max_hands=args.auto_max_hands)
         return
 

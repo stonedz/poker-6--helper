@@ -3,7 +3,7 @@ name: Build Windows EXE
 on:
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ main, master ]
 
 jobs:
   build-windows-exe:
@@ -21,11 +21,11 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pyinstaller
-          pip install -e .
+          pip install -e .[windows-capture]
 
       - name: Build single-file executable (PyInstaller)
         run: |
-          pyinstaller --noconfirm --onefile --name shortdeck-cli src/shortdeck_cli/__main__.py
+          pyinstaller --noconfirm --onefile --name shortdeck-cli --add-data "src/shortdeck_cli/data/preflop_scenarios.json;shortdeck_cli/data" src/shortdeck_cli/__main__.py
 
       - name: Upload EXE artifact
         uses: actions/upload-artifact@v4

@@ -60,6 +60,67 @@ pip install -e .
 shortdeck-cli
 ```
 
+### Auto mode (continuous ingestion)
+
+You can run a non-interactive mode that continuously polls a JSONL stream and automatically computes recommendations.
+
+```bash
+python -m shortdeck_cli --auto --auto-source-jsonl ./tmp/observations.jsonl
+```
+
+Options:
+- `--auto-poll-seconds 1.0` polling interval in seconds
+- `--auto-max-hands N` stop after `N` processed observations (useful for tests)
+
+JSONL schema (one JSON object per line):
+
+```json
+{"hero_hand":"AsAd","hero_position":"CO","villain_position":"UTG","villain_action":"limp","confidence":0.71,"source":"pokerstars"}
+```
+
+Notes:
+- `hero_hand` and `hero_position` are required.
+- For `UTG`, villain fields are optional (auto-resolved to UTG open spot).
+- For non-UTG positions, `villain_position` and `villain_action` are required.
+- Low confidence observations are still ingested and logged as warnings.
+
+### Auto mode (PokerStars window OCR on Windows)
+
+Install optional OCR dependencies:
+
+```bash
+pip install -e .[windows-capture]
+```
+
+Install Tesseract OCR on Windows and pass its executable path if not on `PATH`.
+
+Run:
+
+```bash
+python -m shortdeck_cli --auto --auto-source pokerstars --auto-hero-position CO --auto-window-title PokerStars
+```
+
+Useful options:
+- `--auto-tesseract-cmd "C:\\Program Files\\Tesseract-OCR\\tesseract.exe"`
+- `--auto-debug-dir ./tmp/pokerstars_debug` to store captured frames + OCR text
+- `--auto-roi-config ./tmp/pokerstars_roi.json` to OCR only selected regions
+
+Example ROI config (`./tmp/pokerstars_roi.json`):
+
+```json
+{
+	"hero_hand": {"left": 0.42, "top": 0.76, "right": 0.58, "bottom": 0.90},
+	"action_log": {"left": 0.04, "top": 0.20, "right": 0.42, "bottom": 0.84}
+}
+```
+
+ROI coordinates can be normalized (`0..1`) relative to window size, or absolute pixels.
+
+Current limitations:
+- v1 OCR parsing is heuristic and table-theme dependent.
+- Hero position is provided manually via `--auto-hero-position`.
+- For non-UTG spots, if OCR cannot infer villain action/position, that frame is skipped.
+
 ## Test
 
 ```bash
