@@ -19,7 +19,25 @@ DISPLAY_MIN_PERCENT = 1.0
 
 @lru_cache(maxsize=1)
 def load_strategy_data() -> dict:
-    file_path = Path(__file__).resolve().parent / "data" / "preflop_scenarios.json"
+    # prefer package data next to this module
+    package_path = Path(__file__).resolve().parent / "data" / "preflop_scenarios.json"
+
+    # when bundled as an executable (PyInstaller / frozen), look next to the executable
+    exe_path = None
+    try:
+        import sys
+
+        if getattr(sys, "frozen", False):
+            exe_path = Path(sys.executable).resolve().parent / "data" / "preflop_scenarios.json"
+        # also allow falling back to the executable directory on Windows if the package path doesn't exist
+        elif sys.platform == "win32":
+            alt = Path(sys.executable).resolve().parent / "data" / "preflop_scenarios.json"
+            if alt.exists():
+                exe_path = alt
+    except Exception:
+        exe_path = None
+
+    file_path = exe_path if exe_path and exe_path.exists() else package_path
     with file_path.open("r", encoding="utf-8") as data_file:
         return load(data_file)
 

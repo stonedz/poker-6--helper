@@ -1,5 +1,9 @@
 """Interactive CLI flow for the Short Deck test app."""
 
+import argparse
+import time
+
+from shortdeck_cli.auto_ingest import JsonlObservationSource, Observation, ObservationSource
 from shortdeck_cli.evaluator import recommend_action
 from shortdeck_cli.parser import parse_action, parse_flop_cards, parse_hand, parse_position, parse_turn_card
 from shortdeck_cli.postflop import analyze_flop, analyze_turn
@@ -165,7 +169,108 @@ def _strategy_hand_from_explicit(hero_hand: str) -> str:
     return f"{ordered[0]}{ordered[1]}{suitedness}"
 
 
-def main() -> None:
+def _normalize_observation(observation: Observation) -> tuple[str, str, str, str] | None:
+    try:
+        hero_hand = parse_hand(observation.hero_hand)
+        hero_position = parse_position(observation.hero_position)
+    except ValueError as error:
+        print(f"Skipping observation: {error}")
+        return None
+
+    if hero_position == "UTG":
+        villain_position = "UTG"
+        villain_action = "fold"
+    else:
+        if observation.villain_position is None or observation.villain_action is None:
+            print("Skipping observation: villain_position and villain_action are required when hero is not UTG.")
+            return None
+        try:
+            villain_position = parse_position(observation.villain_position, allowed_positions=previous_positions(hero_position))
+            villain_action = parse_action(observation.villain_action)
+        except ValueError as error:
+            print(f"Skipping observation: {error}")
+            return None
+
+    strategy_hand = hero_hand
+    explicit_hole = len(hero_hand) == 4 and hero_hand[1].islower() and hero_hand[3].islower()
+    if explicit_hole:
+        strategy_hand = _strategy_hand_from_explicit(hero_hand)
+
+    return strategy_hand, hero_hand, hero_position, villain_position, villain_action
+
+
+def _print_recommendation(hero_hand: str, hero_position: str, villain_position: str, villain_action: str, recommendation: str, scenario_key: str) -> None:
+    print("\n--- Scenario ---")
+    print(f"Hero: {hero_hand} @ {hero_position}")
+    if hero_position == "UTG":
+        print("Villain: N/A (UTG open spot)")
+    else:
+        print(f"Villain: {villain_position} did {villain_action}")
+    print(f"Scenario key: {scenario_key}")
+    print("\n>>> RECOMMENDATION <<<")
+    rec_color = _color_for_recommendation(recommendation)
+    print(f"{ANSI_BOLD}{rec_color}{recommendation}{ANSI_RESET}")
+    print(">>>>>>>>>>>>>>>>>>>>>>")
+    print("(When data is set from TBD to real actions, this becomes data-driven.)")
+
+
+def run_auto_mode(
+    source: ObservationSource,
+    poll_seconds: float = 1.0,
+    max_hands: int | None = None,
+) -> None:
+    print("=== Short Deck (6+) Auto Mode ===")
+    print("Polling for observations and auto-running recommendations.")
+    print("Press Ctrl+C to stop.")
+
+    processed = 0
+    last_signature: tuple[str, str, str, str] | None = None
+
+    try:
+        while True:
+            observation = source.next_observation()
+            if observation is None:
+                time.sleep(poll_seconds)
+                continue
+
+            normalized = _normalize_observation(observation)
+            if normalized is None:
+                continue
+
+            strategy_hand, hero_hand, hero_position, villain_position, villain_action = normalized
+            signature = (hero_hand, hero_position, villain_position, villain_action)
+            if signature == last_signature:
+                continue
+            last_signature = signature
+
+            if observation.confidence is not None and observation.confidence < 0.5:
+                source_name = observation.source or "capture"
+                print(f"Warning: low confidence from {source_name}: {observation.confidence:.2f}; ingesting anyway.")
+
+            scenario_key, recommendation = recommend_action(
+                hero_hand=strategy_hand,
+                hero_position=hero_position,
+                villain_position=villain_position,
+                villain_action=villain_action,
+            )
+            _print_recommendation(
+                hero_hand=hero_hand,
+                hero_position=hero_position,
+                villain_position=villain_position,
+                villain_action=villain_action,
+                recommendation=recommendation,
+                scenario_key=scenario_key,
+            )
+
+            processed += 1
+            if max_hands is not None and processed >= max_hands:
+                print("\nAuto mode finished.")
+                return
+    except KeyboardInterrupt:
+        print("\nSession ended.")
+
+
+def run_manual_mode() -> None:
     print("=== Short Deck (6+) Test CLI ===")
     print("Play runs continuously hand by hand.")
     print("Hero position is entered every hand.")
@@ -216,18 +321,14 @@ def main() -> None:
             villain_action=villain_action,
         )
 
-        print("\n--- Scenario ---")
-        print(f"Hero: {hero_hand} @ {hero_position}")
-        if hero_position == "UTG":
-            print("Villain: N/A (UTG open spot)")
-        else:
-            print(f"Villain: {villain_position} did {villain_action}")
-        print(f"Scenario key: {scenario_key}")
-        print("\n>>> RECOMMENDATION <<<")
-        rec_color = _color_for_recommendation(recommendation)
-        print(f"{ANSI_BOLD}{rec_color}{recommendation}{ANSI_RESET}")
-        print(">>>>>>>>>>>>>>>>>>>>>>")
-        print("(When data is set from TBD to real actions, this becomes data-driven.)")
+        _print_recommendation(
+            hero_hand=hero_hand,
+            hero_position=hero_position,
+            villain_position=villain_position,
+            villain_action=villain_action,
+            recommendation=recommendation,
+            scenario_key=scenario_key,
+        )
 
         if explicit_hole:
             hole_cards = [hero_hand[:2], hero_hand[2:]]
@@ -268,5 +369,41 @@ def main() -> None:
                     _print_out_details("River out cards", turn_analysis["river_out_details"], turn_analysis["river_total"])
 
 
+def cli_main(argv: list[str] | None = None) -> None:
+    parser = argparse.ArgumentParser(description="Short Deck CLI")
+    parser.add_argument("--auto", action="store_true", help="Run in non-interactive auto-ingest mode")
+    parser.add_argument(
+        "--auto-source-jsonl",
+        help="Path to JSONL file containing observed hands/actions (one JSON object per line)",
+    )
+    parser.add_argument(
+        "--auto-poll-seconds",
+        type=float,
+        default=1.0,
+        help="Polling interval for auto mode (default: 1.0)",
+    )
+    parser.add_argument(
+        "--auto-max-hands",
+        type=int,
+        default=None,
+        help="Stop auto mode after N processed hands (test/debug option)",
+    )
+
+    args = parser.parse_args(argv)
+
+    if args.auto:
+        if not args.auto_source_jsonl:
+            parser.error("--auto-source-jsonl is required when --auto is used")
+        source = JsonlObservationSource(args.auto_source_jsonl)
+        run_auto_mode(source=source, poll_seconds=args.auto_poll_seconds, max_hands=args.auto_max_hands)
+        return
+
+    run_manual_mode()
+
+
+def main() -> None:
+    run_manual_mode()
+
+
 if __name__ == "__main__":
-    main()
+    cli_main()

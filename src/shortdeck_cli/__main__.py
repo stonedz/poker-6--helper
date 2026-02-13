@@ -1,5 +1,5 @@
-from shortdeck_cli.cli import main
+from shortdeck_cli.cli import cli_main
 
 
 if __name__ == "__main__":
-    main()
+    cli_main()
