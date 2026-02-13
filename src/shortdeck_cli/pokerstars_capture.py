@@ -167,8 +167,9 @@ def _find_window_rect(title_contains: str) -> _WindowRect | None:
         return None
 
     user32 = ctypes.windll.user32
+    wnd_enum_proc = ctypes.WINFUNCTYPE(wintypes.BOOL, wintypes.HWND, wintypes.LPARAM)
     enum_windows = user32.EnumWindows
-    enum_windows.argtypes = [wintypes.WNDENUMPROC, wintypes.LPARAM]
+    enum_windows.argtypes = [wnd_enum_proc, wintypes.LPARAM]
     enum_windows.restype = wintypes.BOOL
 
     get_window_text_length = user32.GetWindowTextLengthW
@@ -179,7 +180,7 @@ def _find_window_rect(title_contains: str) -> _WindowRect | None:
     wanted = title_contains.lower().strip()
     found: list[_WindowRect] = []
 
-    @wintypes.WNDENUMPROC
+    @wnd_enum_proc
     def _callback(hwnd, _lparam):
         if not is_window_visible(hwnd):
             return True
