@@ -1,0 +1,5765 @@
+{
+  "version": "0.1.0",
+  "game": "short-deck",
+  "format": "5max-50a",
+  "source": "rangeconverter article scenario labels",
+  "scenarios": {
+    "open:UTG_rfi": {
+      "label": "1 - UTG RFI",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A8s": {
+          "all-in": 96.4,
+          "call": 2.8,
+          "ante": 0.8
+        },
+        "A7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "KJs": {
+          "all-in": 99.6,
+          "ante": 0.4
+        },
+        "KTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "all-in": 72.6,
+          "call": 26.6,
+          "ante": 0.8
+        },
+        "KQo": {
+          "call": 98.9,
+          "fold": 0.7,
+          "ante": 0.4
+        },
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "QTs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "all-in": 61.3,
+          "call": 38,
+          "ante": 0.7
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "JJ": {
+          "all-in": 62.9,
+          "call": 37.1
+        },
+        "JTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "KTo": {
+          "call": 99.3,
+          "ante": 0.7
+        },
+        "QTo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "JTo": {
+          "call": 99.4,
+          "ante": 0.6
+        },
+        "TT": "call",
+        "T9s": {
+          "call": 93.9,
+          "all-in": 5.6,
+          "fold": 0.5
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": {
+          "call": 57.3,
+          "fold": 42.3,
+          "ante": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": {
+          "fold": 66.4,
+          "call": 33.6
+        },
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "call",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "open:MP_rfi": {
+      "label": "2 - MP RFI",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A8s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 98,
+          "call": 1.4,
+          "ante": 0.6
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 62.8,
+          "all-in": 36.9,
+          "fold": 0.3
+        },
+        "KJs": {
+          "all-in": 99.6,
+          "ante": 0.4
+        },
+        "KTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": "fold",
+        "AQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "QTs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "all-in": 63.8,
+          "call": 35.5,
+          "ante": 0.7
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "JJ": {
+          "all-in": 65.6,
+          "call": 34.4
+        },
+        "JTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": {
+          "call": 92.4,
+          "all-in": 7,
+          "fold": 0.6
+        },
+        "KTo": {
+          "call": 99.3,
+          "ante": 0.7
+        },
+        "QTo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "JTo": {
+          "call": 54.6,
+          "all-in": 44.7,
+          "ante": 0.7
+        },
+        "TT": "call",
+        "T9s": {
+          "call": 91.1,
+          "all-in": 8.4,
+          "fold": 0.5
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K9o": "fold",
+        "Q9o": {
+          "fold": 76,
+          "call": 24
+        },
+        "J9o": {
+          "fold": 79,
+          "call": 21
+        },
+        "T9o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": {
+          "call": 95.1,
+          "fold": 4.5,
+          "ante": 0.4
+        },
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "call",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "open:HJ_rfi": {
+      "label": "3 - HJ RFI",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A8s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 58.6,
+          "call": 40.9,
+          "ante": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 53.8,
+          "all-in": 45.9,
+          "fold": 0.3
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "QTs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "Q6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KJo": {
+          "all-in": 99.6,
+          "ante": 0.4
+        },
+        "QJo": {
+          "call": 61.3,
+          "all-in": 37.9,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "JJ": {
+          "call": 93.1,
+          "all-in": 6.9
+        },
+        "JTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J6s": "fold",
+        "ATo": {
+          "call": 67.5,
+          "all-in": 32,
+          "fold": 0.5
+        },
+        "KTo": {
+          "call": 99.3,
+          "ante": 0.7
+        },
+        "QTo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "JTo": {
+          "all-in": 62.6,
+          "call": 36.9,
+          "ante": 0.5
+        },
+        "TT": "call",
+        "T9s": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "call",
+        "T6s": "fold",
+        "A9o": {
+          "call": 88,
+          "all-in": 11.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K9o": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "Q9o": {
+          "call": 98.9,
+          "fold": 0.6,
+          "ante": 0.5
+        },
+        "J9o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T9o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": "fold",
+        "A8o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K8o": {
+          "fold": 67.4,
+          "call": 32.6
+        },
+        "Q8o": {
+          "fold": 70.6,
+          "call": 29.4
+        },
+        "J8o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8o": {
+          "call": 90.9,
+          "fold": 8.6,
+          "ante": 0.5
+        },
+        "98o": {
+          "fold": 98.5,
+          "call": 1.5
+        },
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 70.1,
+          "fold": 29.6,
+          "ante": 0.3
+        },
+        "86s": "fold",
+        "A7o": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "call",
+        "76s": "fold",
+        "A6o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "open:CO_rfi": {
+      "label": "4 - CO RFI",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 67.3,
+          "all-in": 29.2,
+          "ante": 3.1,
+          "fold": 0.4
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": {
+          "all-in": 92.2,
+          "call": 7,
+          "ante": 0.8
+        },
+        "A8s": {
+          "all-in": 59.9,
+          "call": 39.4,
+          "ante": 0.7
+        },
+        "A7s": {
+          "all-in": 91.1,
+          "call": 8.3,
+          "ante": 0.6
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 55.1,
+          "call": 42,
+          "ante": 2.9
+        },
+        "KK": {
+          "all-in": 51.9,
+          "call": 45.2,
+          "ante": 2.9
+        },
+        "KQs": {
+          "all-in": 85.3,
+          "call": 14,
+          "ante": 0.7
+        },
+        "KJs": {
+          "call": 85.5,
+          "all-in": 13.9,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "K9s": {
+          "call": 57.5,
+          "all-in": 42.1,
+          "ante": 0.4
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "QQ": {
+          "all-in": 62.4,
+          "call": 35.6,
+          "ante": 2
+        },
+        "QJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "QTs": "call",
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "Q6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KJo": {
+          "all-in": 99.6,
+          "ante": 0.4
+        },
+        "QJo": {
+          "all-in": 56.2,
+          "call": 42.1,
+          "ante": 1.7
+        },
+        "JJ": "call",
+        "JTs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "J9s": {
+          "all-in": 92.3,
+          "call": 6.9,
+          "ante": 0.8
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J6s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "ATo": {
+          "all-in": 99.5,
+          "ante": 0.5
+        },
+        "KTo": {
+          "all-in": 67.1,
+          "call": 32.4,
+          "ante": 0.5
+        },
+        "QTo": {
+          "all-in": 61.3,
+          "call": 38.2,
+          "ante": 0.5
+        },
+        "JTo": {
+          "call": 99.4,
+          "ante": 0.6
+        },
+        "TT": "call",
+        "T9s": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "call",
+        "T6s": {
+          "call": 99.6,
+          "fold": 0.4
+        },
+        "A9o": {
+          "all-in": 99.1,
+          "ante": 0.9
+        },
+        "K9o": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "Q9o": {
+          "call": 98.9,
+          "fold": 0.6,
+          "ante": 0.5
+        },
+        "J9o": {
+          "call": 93.6,
+          "ante": 3.1,
+          "all-in": 2.8,
+          "fold": 0.5
+        },
+        "T9o": {
+          "call": 81,
+          "all-in": 18.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A8o": {
+          "all-in": 92.3,
+          "call": 7,
+          "ante": 0.7
+        },
+        "K8o": {
+          "call": 99.3,
+          "fold": 0.7
+        },
+        "Q8o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J8o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8o": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "98o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A7o": {
+          "all-in": 51.3,
+          "call": 48.1,
+          "ante": 0.6
+        },
+        "K7o": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "Q7o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J7o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T7o": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "97o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "87o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "77": "call",
+        "76s": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "A6o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K6o": {
+          "call": 99.3,
+          "fold": 0.7
+        },
+        "Q6o": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "J6o": {
+          "call": 74.3,
+          "fold": 25.7
+        },
+        "T6o": {
+          "fold": 87.4,
+          "call": 12.6
+        },
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_limp:MP_vs_UTG_limp": {
+      "label": "5 - MP vs UTG Limp",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "all-in": 63.1,
+          "call": 36.4,
+          "ante": 0.5
+        },
+        "AQs": {
+          "all-in": 99.1,
+          "ante": 0.9
+        },
+        "AJs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "ATs": {
+          "all-in": 71.7,
+          "call": 27.8,
+          "ante": 0.5
+        },
+        "A9s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A8s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A7s": {
+          "call": 79.8,
+          "all-in": 19.5,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "KK": {
+          "call": 78.8,
+          "all-in": 20.5,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "KJs": {
+          "all-in": 99.6,
+          "ante": 0.4
+        },
+        "KTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 81,
+          "fold": 18.6,
+          "ante": 0.4
+        },
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "all-in": 78.2,
+          "call": 21,
+          "ante": 0.8
+        },
+        "KQo": {
+          "call": 98.9,
+          "fold": 0.7,
+          "ante": 0.4
+        },
+        "QQ": {
+          "all-in": 63.4,
+          "call": 35.9,
+          "ante": 0.7
+        },
+        "QJs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "QTs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 86.6,
+          "fold": 13.1,
+          "ante": 0.3
+        },
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "JJ": {
+          "call": 87.6,
+          "all-in": 12.4
+        },
+        "JTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "KTo": {
+          "call": 99.3,
+          "ante": 0.7
+        },
+        "QTo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "JTo": {
+          "call": 99.4,
+          "ante": 0.6
+        },
+        "TT": "call",
+        "T9s": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": {
+          "fold": 57.8,
+          "call": 42.2
+        },
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": {
+          "call": 96.4,
+          "fold": 3.1,
+          "ante": 0.5
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": "fold",
+        "A8o": {
+          "fold": 83,
+          "call": 17
+        },
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "fold": 59.3,
+          "call": 40.7
+        },
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "call",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_limp:HJ_vs_UTG_limp": {
+      "label": "6 - HJ vs UTG Limp",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "AQs": {
+          "all-in": 99.1,
+          "ante": 0.9
+        },
+        "AJs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "ATs": {
+          "all-in": 85.6,
+          "call": 13.9,
+          "ante": 0.5
+        },
+        "A9s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A8s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A7s": {
+          "call": 60.1,
+          "all-in": 39.5,
+          "ante": 0.4
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "KK": {
+          "call": 56.7,
+          "all-in": 43,
+          "ante": 0.3
+        },
+        "KQs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "KJs": {
+          "all-in": 99.6,
+          "ante": 0.4
+        },
+        "KTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KQo": {
+          "call": 54,
+          "all-in": 45.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "QQ": {
+          "all-in": 56,
+          "call": 43.4,
+          "ante": 0.6
+        },
+        "QJs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "QTs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "Q6s": "fold",
+        "AJo": {
+          "all-in": 71.4,
+          "call": 27.8,
+          "ante": 0.8
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "JJ": {
+          "call": 78,
+          "all-in": 22
+        },
+        "JTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "call": 74.5,
+          "fold": 25.1,
+          "ante": 0.4
+        },
+        "J6s": "fold",
+        "ATo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "KTo": {
+          "call": 99.3,
+          "ante": 0.7
+        },
+        "QTo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "JTo": {
+          "all-in": 53.7,
+          "call": 45.8,
+          "ante": 0.5
+        },
+        "TT": "call",
+        "T9s": {
+          "call": 58.8,
+          "all-in": 39.7,
+          "ante": 1.5
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "call",
+        "T6s": "fold",
+        "A9o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K9o": "fold",
+        "Q9o": {
+          "fold": 94.3,
+          "call": 5.7
+        },
+        "J9o": {
+          "fold": 60.2,
+          "call": 39.8
+        },
+        "T9o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": "fold",
+        "A8o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": {
+          "fold": 84.4,
+          "call": 15.6
+        },
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86s": "fold",
+        "A7o": {
+          "call": 85.4,
+          "fold": 14.2,
+          "ante": 0.4
+        },
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "call",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_limp:CO_vs_UTG_limp": {
+      "label": "7 - CO vs UTG Limp",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": "ante",
+        "AKs": {
+          "all-in": 78.7,
+          "ante": 21.3
+        },
+        "AQs": {
+          "all-in": 69.8,
+          "ante": 30.2
+        },
+        "AJs": {
+          "ante": 54.3,
+          "all-in": 45.7
+        },
+        "ATs": {
+          "call": 69,
+          "all-in": 23.7,
+          "ante": 7.3
+        },
+        "A9s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A8s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "KK": {
+          "all-in": 64.1,
+          "ante": 35.9
+        },
+        "KQs": {
+          "all-in": 96.5,
+          "ante": 3.5
+        },
+        "KJs": {
+          "all-in": 95.4,
+          "ante": 4.6
+        },
+        "KTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KQo": {
+          "call": 87.9,
+          "all-in": 11,
+          "fold": 0.7,
+          "ante": 0.4
+        },
+        "QQ": {
+          "all-in": 81.2,
+          "ante": 18.8
+        },
+        "QJs": {
+          "all-in": 57.2,
+          "ante": 42.8
+        },
+        "QTs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "Q6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "JJ": {
+          "call": 81.9,
+          "all-in": 12.4,
+          "ante": 5.7
+        },
+        "JTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J6s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "ATo": {
+          "all-in": 61.2,
+          "call": 38.4,
+          "ante": 0.4
+        },
+        "KTo": {
+          "call": 85.6,
+          "all-in": 8.2,
+          "ante": 6.2
+        },
+        "QTo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "JTo": {
+          "all-in": 73.2,
+          "call": 26.3,
+          "ante": 0.5
+        },
+        "TT": "call",
+        "T9s": {
+          "ante": 51.5,
+          "call": 48.5
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "call",
+        "T6s": {
+          "call": 99.6,
+          "fold": 0.4
+        },
+        "A9o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K9o": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "Q9o": {
+          "call": 98.9,
+          "fold": 0.6,
+          "ante": 0.5
+        },
+        "J9o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T9o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 76.7,
+          "ante": 22.8,
+          "fold": 0.5
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A8o": {
+          "call": 92.2,
+          "ante": 7.3,
+          "fold": 0.5
+        },
+        "K8o": {
+          "call": 99.3,
+          "fold": 0.7
+        },
+        "Q8o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J8o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8o": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "98o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A7o": {
+          "call": 92.3,
+          "ante": 7.4,
+          "fold": 0.3
+        },
+        "K7o": {
+          "fold": 69.7,
+          "call": 30.3
+        },
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "87o": {
+          "call": 68.5,
+          "fold": 31.1,
+          "ante": 0.4
+        },
+        "77": "call",
+        "76s": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "A6o": {
+          "call": 74,
+          "ante": 25.6,
+          "fold": 0.4
+        },
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_limp:BTN_vs_UTG_limp": {
+      "label": "8 - BTN vs UTG Limp",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": "ante",
+        "AKs": {
+          "all-in": 55.3,
+          "ante": 44.7
+        },
+        "AQs": {
+          "call": 74,
+          "ante": 25.6,
+          "fold": 0.4
+        },
+        "AJs": {
+          "call": 79.8,
+          "ante": 19.7,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "A8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "A7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "KK": {
+          "call": 89.7,
+          "ante": 9.9,
+          "fold": 0.4
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "all-in": 79.6,
+          "call": 19.6,
+          "ante": 0.8
+        },
+        "KQo": {
+          "call": 98.9,
+          "fold": 0.7,
+          "ante": 0.4
+        },
+        "QQ": {
+          "call": 83.9,
+          "ante": 15.7,
+          "fold": 0.4
+        },
+        "QJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "QTs": "call",
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "Q6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJo": {
+          "call": 66.2,
+          "all-in": 33.3,
+          "ante": 0.5
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 80.9,
+          "all-in": 9.8,
+          "ante": 8.7,
+          "fold": 0.6
+        },
+        "JJ": {
+          "call": 95.6,
+          "ante": 4.4
+        },
+        "JTs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J6s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "ATo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "KTo": {
+          "call": 52.8,
+          "all-in": 43.8,
+          "ante": 3.4
+        },
+        "QTo": {
+          "call": 86.5,
+          "all-in": 9.8,
+          "ante": 3.1,
+          "fold": 0.6
+        },
+        "JTo": {
+          "call": 99.4,
+          "ante": 0.6
+        },
+        "TT": "call",
+        "T9s": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "call",
+        "T6s": {
+          "call": 99.6,
+          "fold": 0.4
+        },
+        "A9o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K9o": {
+          "call": 97.7,
+          "ante": 1.7,
+          "fold": 0.6
+        },
+        "Q9o": {
+          "call": 97.5,
+          "ante": 1.9,
+          "fold": 0.6
+        },
+        "J9o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T9o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A8o": {
+          "all-in": 51.1,
+          "call": 48.4,
+          "ante": 0.5
+        },
+        "K8o": {
+          "call": 99.3,
+          "fold": 0.7
+        },
+        "Q8o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J8o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8o": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "98o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A7o": {
+          "call": 95.1,
+          "ante": 4.6,
+          "fold": 0.3
+        },
+        "K7o": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "Q7o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J7o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T7o": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "97o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "87o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "77": "call",
+        "76s": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "A6o": {
+          "call": 82.4,
+          "ante": 17.2,
+          "fold": 0.4
+        },
+        "K6o": {
+          "call": 99.3,
+          "fold": 0.7
+        },
+        "Q6o": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "J6o": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "T6o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96o": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86o": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "76o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_limp:HJ_vs_MP_limp": {
+      "label": "9 - HJ vs MP Limp",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "all-in": 95.3,
+          "call": 4.1,
+          "ante": 0.6
+        },
+        "AQs": {
+          "all-in": 99.1,
+          "ante": 0.9
+        },
+        "AJs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "ATs": {
+          "all-in": 99.5,
+          "ante": 0.5
+        },
+        "A9s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A8s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A7s": {
+          "call": 93.7,
+          "all-in": 5.6,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "KK": {
+          "call": 95.2,
+          "all-in": 4.1,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "KJs": {
+          "all-in": 99.6,
+          "ante": 0.4
+        },
+        "KTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KQo": {
+          "all-in": 70.4,
+          "call": 28.9,
+          "ante": 0.7
+        },
+        "QQ": {
+          "call": 74.2,
+          "all-in": 25,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "QTs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 81.2,
+          "fold": 18.5,
+          "ante": 0.3
+        },
+        "Q6s": {
+          "fold": 77.3,
+          "call": 22.7
+        },
+        "AJo": {
+          "all-in": 85.3,
+          "call": 12.5,
+          "ante": 2.2
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "JJ": {
+          "all-in": 68.4,
+          "call": 31.6
+        },
+        "JTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "fold": 72.2,
+          "call": 27.8
+        },
+        "J6s": "fold",
+        "ATo": {
+          "call": 85.5,
+          "all-in": 13.9,
+          "fold": 0.6
+        },
+        "KTo": {
+          "call": 99.3,
+          "ante": 0.7
+        },
+        "QTo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "JTo": {
+          "all-in": 84.3,
+          "call": 15.2,
+          "ante": 0.5
+        },
+        "TT": "call",
+        "T9s": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": {
+          "call": 69.2,
+          "fold": 30.8
+        },
+        "T6s": "fold",
+        "A9o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K9o": "fold",
+        "Q9o": {
+          "fold": 61.6,
+          "call": 38.4
+        },
+        "J9o": {
+          "call": 51.2,
+          "fold": 48.8
+        },
+        "T9o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": "fold",
+        "A8o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86s": "fold",
+        "A7o": {
+          "call": 95.1,
+          "fold": 4.5,
+          "ante": 0.4
+        },
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "call",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_limp:CO_vs_MP_limp": {
+      "label": "10 - CO vs MP Limp",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": "ante",
+        "AKs": {
+          "all-in": 66.7,
+          "ante": 33.3
+        },
+        "AQs": {
+          "all-in": 89.4,
+          "ante": 10.6
+        },
+        "AJs": {
+          "ante": 59.5,
+          "all-in": 40.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A8s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A7s": {
+          "all-in": 71.6,
+          "call": 27.8,
+          "ante": 0.6
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "KK": {
+          "all-in": 99.6,
+          "ante": 0.4
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "all-in": 69,
+          "ante": 24,
+          "call": 7
+        },
+        "KTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KQo": {
+          "all-in": 88.1,
+          "call": 11.1,
+          "ante": 0.8
+        },
+        "QQ": {
+          "all-in": 50.9,
+          "ante": 33.8,
+          "call": 15.3
+        },
+        "QJs": {
+          "ante": 70.7,
+          "all-in": 29.3
+        },
+        "QTs": {
+          "all-in": 99.3,
+          "ante": 0.7
+        },
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "Q6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KJo": {
+          "call": 67.8,
+          "all-in": 31.6,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 78.2,
+          "all-in": 20.9,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "JJ": {
+          "all-in": 52.5,
+          "call": 47.2,
+          "ante": 0.3
+        },
+        "JTs": {
+          "all-in": 99.7,
+          "ante": 0.3
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J6s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "ATo": {
+          "all-in": 98.1,
+          "call": 1.4,
+          "ante": 0.5
+        },
+        "KTo": {
+          "call": 89.7,
+          "ante": 10.3
+        },
+        "QTo": {
+          "call": 66.3,
+          "all-in": 19.5,
+          "ante": 13.7,
+          "fold": 0.5
+        },
+        "JTo": {
+          "all-in": 74.6,
+          "call": 24.9,
+          "ante": 0.5
+        },
+        "TT": "call",
+        "T9s": {
+          "ante": 66.5,
+          "call": 29.3,
+          "all-in": 4.2
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "call",
+        "T6s": {
+          "call": 99.6,
+          "fold": 0.4
+        },
+        "A9o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K9o": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "Q9o": {
+          "call": 98.9,
+          "fold": 0.6,
+          "ante": 0.5
+        },
+        "J9o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T9o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A8o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K8o": {
+          "call": 99.3,
+          "fold": 0.7
+        },
+        "Q8o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J8o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8o": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "98o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A7o": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K7o": {
+          "fold": 78,
+          "call": 22
+        },
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": {
+          "fold": 50.3,
+          "call": 49.7
+        },
+        "87o": "fold",
+        "77": "call",
+        "76s": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "A6o": {
+          "call": 59.8,
+          "ante": 40.2
+        },
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_limp:BTN_vs_MP_limp": {
+      "label": "11 - BTN vs MP Limp",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": "ante",
+        "AKs": {
+          "ante": 94.5,
+          "call": 5.5
+        },
+        "AQs": {
+          "call": 53.3,
+          "ante": 46.7
+        },
+        "AJs": {
+          "ante": 54.3,
+          "call": 45.4,
+          "fold": 0.3
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "A8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "A7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "KK": {
+          "ante": 67.2,
+          "call": 32.8
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KQo": {
+          "call": 97.6,
+          "ante": 1.7,
+          "fold": 0.7
+        },
+        "QQ": {
+          "call": 79.8,
+          "ante": 19.8,
+          "fold": 0.4
+        },
+        "QJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "QTs": "call",
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "Q6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJo": {
+          "call": 74.4,
+          "all-in": 25.1,
+          "ante": 0.5
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 96.3,
+          "ante": 3.1,
+          "fold": 0.6
+        },
+        "JJ": {
+          "call": 90.2,
+          "ante": 9.8
+        },
+        "JTs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J6s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "ATo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "KTo": {
+          "all-in": 49.2,
+          "call": 45.1,
+          "ante": 5.7
+        },
+        "QTo": {
+          "all-in": 54.7,
+          "call": 44.9,
+          "ante": 0.4
+        },
+        "JTo": {
+          "call": 99.4,
+          "ante": 0.6
+        },
+        "TT": "call",
+        "T9s": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "call",
+        "T6s": {
+          "call": 99.6,
+          "fold": 0.4
+        },
+        "A9o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K9o": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "Q9o": {
+          "call": 90.5,
+          "ante": 8.9,
+          "fold": 0.6
+        },
+        "J9o": {
+          "call": 97.8,
+          "ante": 1.7,
+          "fold": 0.5
+        },
+        "T9o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A8o": {
+          "all-in": 61.3,
+          "call": 38.1,
+          "ante": 0.6
+        },
+        "K8o": {
+          "call": 99.3,
+          "fold": 0.7
+        },
+        "Q8o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J8o": {
+          "call": 90.9,
+          "ante": 8.6,
+          "fold": 0.5
+        },
+        "T8o": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "98o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A7o": {
+          "call": 77.1,
+          "all-in": 22.2,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K7o": {
+          "call": 88.2,
+          "ante": 11.2,
+          "fold": 0.6
+        },
+        "Q7o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J7o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T7o": {
+          "call": 91,
+          "ante": 8.7,
+          "fold": 0.3
+        },
+        "97o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "87o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "77": "call",
+        "76s": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "A6o": {
+          "call": 74,
+          "ante": 25.6,
+          "fold": 0.4
+        },
+        "K6o": {
+          "call": 97.7,
+          "ante": 1.6,
+          "fold": 0.7
+        },
+        "Q6o": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "J6o": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "T6o": {
+          "call": 96.4,
+          "ante": 3.2,
+          "fold": 0.4
+        },
+        "96o": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86o": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "76o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_limp:CO_vs_HJ_limp": {
+      "label": "12 - CO vs HJ Limp",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": "ante",
+        "AKs": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "AQs": {
+          "all-in": 55.9,
+          "ante": 44.1
+        },
+        "AJs": {
+          "call": 48.1,
+          "ante": 30.8,
+          "all-in": 20.8,
+          "fold": 0.3
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A8s": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "A7s": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "KK": {
+          "all-in": 99.6,
+          "ante": 0.4
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 48.3,
+          "ante": 41.9,
+          "all-in": 9.7
+        },
+        "KTs": {
+          "all-in": 96.9,
+          "ante": 3.1
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KQo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "QQ": {
+          "all-in": 71.4,
+          "call": 16.7,
+          "ante": 11.9
+        },
+        "QJs": {
+          "ante": 58.7,
+          "call": 35.7,
+          "all-in": 5.6
+        },
+        "QTs": {
+          "all-in": 92.3,
+          "ante": 4.9,
+          "call": 2.8
+        },
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "Q6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJo": {
+          "all-in": 99.2,
+          "ante": 0.8
+        },
+        "KJo": {
+          "all-in": 81.8,
+          "call": 13.7,
+          "ante": 4.5
+        },
+        "QJo": {
+          "all-in": 82.6,
+          "call": 16.8,
+          "ante": 0.6
+        },
+        "JJ": {
+          "all-in": 60,
+          "call": 39.6,
+          "ante": 0.4
+        },
+        "JTs": {
+          "call": 59.7,
+          "all-in": 27.7,
+          "ante": 12.3,
+          "fold": 0.3
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J6s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "ATo": {
+          "all-in": 87,
+          "call": 12.5,
+          "ante": 0.5
+        },
+        "KTo": {
+          "call": 82.9,
+          "all-in": 9.6,
+          "ante": 7.5
+        },
+        "QTo": {
+          "call": 53.7,
+          "all-in": 41.8,
+          "ante": 4.1,
+          "fold": 0.4
+        },
+        "JTo": {
+          "all-in": 99.5,
+          "ante": 0.5
+        },
+        "TT": "call",
+        "T9s": {
+          "all-in": 92.4,
+          "ante": 7.6
+        },
+        "T8s": {
+          "call": 78.5,
+          "ante": 21.2,
+          "fold": 0.3
+        },
+        "T7s": "call",
+        "T6s": {
+          "call": 99.6,
+          "fold": 0.4
+        },
+        "A9o": {
+          "all-in": 85.1,
+          "call": 14,
+          "ante": 0.9
+        },
+        "K9o": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "Q9o": {
+          "call": 98.9,
+          "fold": 0.6,
+          "ante": 0.5
+        },
+        "J9o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T9o": {
+          "call": 96.3,
+          "ante": 3.3,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 94.9,
+          "ante": 4.6,
+          "fold": 0.5
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A8o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K8o": {
+          "call": 99.3,
+          "fold": 0.7
+        },
+        "Q8o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J8o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8o": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "98o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A7o": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K7o": {
+          "call": 62.2,
+          "fold": 26.6,
+          "ante": 11.2
+        },
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "call",
+        "76s": {
+          "call": 82.7,
+          "fold": 17,
+          "ante": 0.3
+        },
+        "A6o": {
+          "call": 71.3,
+          "ante": 28.3,
+          "fold": 0.4
+        },
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_limp:BTN_vs_HJ_limp": {
+      "label": "13 - BTN vs HJ Limp",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": "ante",
+        "AKs": "ante",
+        "AQs": "ante",
+        "AJs": {
+          "ante": 82,
+          "call": 18
+        },
+        "ATs": {
+          "call": 98.2,
+          "ante": 1.8
+        },
+        "A9s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "A8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "A7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": {
+          "all-in": 99.4,
+          "ante": 0.6
+        },
+        "KK": "ante",
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "all-in": 72.6,
+          "call": 22.4,
+          "ante": 5
+        },
+        "KQo": {
+          "call": 76.8,
+          "ante": 12.8,
+          "all-in": 9.7,
+          "fold": 0.7
+        },
+        "QQ": {
+          "call": 62.4,
+          "ante": 37.6
+        },
+        "QJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "QTs": "call",
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "Q6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJo": {
+          "call": 54.8,
+          "all-in": 44.5,
+          "ante": 0.7
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 79.6,
+          "all-in": 19.5,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "JJ": {
+          "call": 79.2,
+          "ante": 20.8
+        },
+        "JTs": {
+          "call": 86.9,
+          "ante": 12.6,
+          "fold": 0.5
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J6s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "ATo": {
+          "call": 86.6,
+          "ante": 7.2,
+          "all-in": 5.6,
+          "fold": 0.6
+        },
+        "KTo": {
+          "call": 85.6,
+          "ante": 14.4
+        },
+        "QTo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "JTo": {
+          "call": 99.4,
+          "ante": 0.6
+        },
+        "TT": "call",
+        "T9s": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "call",
+        "T6s": {
+          "call": 99.6,
+          "fold": 0.4
+        },
+        "A9o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K9o": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "Q9o": {
+          "call": 91.9,
+          "ante": 7.5,
+          "fold": 0.6
+        },
+        "J9o": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T9o": {
+          "call": 97.7,
+          "ante": 1.9,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A8o": {
+          "call": 81,
+          "all-in": 18.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "K8o": {
+          "call": 99.3,
+          "fold": 0.7
+        },
+        "Q8o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J8o": {
+          "call": 79.8,
+          "ante": 19.7,
+          "fold": 0.5
+        },
+        "T8o": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "98o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A7o": {
+          "all-in": 85.5,
+          "call": 13.9,
+          "ante": 0.6
+        },
+        "K7o": {
+          "call": 96.4,
+          "ante": 3,
+          "fold": 0.6
+        },
+        "Q7o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J7o": {
+          "call": 96.5,
+          "ante": 3,
+          "fold": 0.5
+        },
+        "T7o": {
+          "call": 96.5,
+          "ante": 3.2,
+          "fold": 0.3
+        },
+        "97o": {
+          "call": 97.8,
+          "ante": 1.8,
+          "fold": 0.4
+        },
+        "87o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "77": "call",
+        "76s": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "A6o": {
+          "call": 72.7,
+          "ante": 26.9,
+          "fold": 0.4
+        },
+        "K6o": {
+          "call": 70.1,
+          "ante": 29.2,
+          "fold": 0.7
+        },
+        "Q6o": {
+          "call": 97.6,
+          "ante": 1.8,
+          "fold": 0.6
+        },
+        "J6o": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "T6o": {
+          "call": 92.2,
+          "ante": 7.4,
+          "fold": 0.4
+        },
+        "96o": {
+          "call": 96.5,
+          "ante": 3.1,
+          "fold": 0.4
+        },
+        "86o": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "76o": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_limp:BTN_vs_CO_limp": {
+      "label": "14 - BTN vs CO Limp",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": "ante",
+        "AKs": "ante",
+        "AQs": "ante",
+        "AJs": "ante",
+        "ATs": "ante",
+        "A9s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "A8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "A7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "A6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AKo": "ante",
+        "KK": "ante",
+        "KQs": "ante",
+        "KJs": "ante",
+        "KTs": {
+          "ante": 53.8,
+          "call": 46.2
+        },
+        "K9s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "K8s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "K6s": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "AQo": {
+          "ante": 66.7,
+          "all-in": 33.3
+        },
+        "KQo": {
+          "call": 86.5,
+          "all-in": 9.7,
+          "ante": 3.1,
+          "fold": 0.7
+        },
+        "QQ": "ante",
+        "QJs": {
+          "ante": 73.5,
+          "call": 26.5
+        },
+        "QTs": {
+          "ante": 52.7,
+          "call": 47.3
+        },
+        "Q9s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q8s": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "Q7s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "Q6s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJo": {
+          "all-in": 85.3,
+          "ante": 14.7
+        },
+        "KJo": {
+          "call": 66.7,
+          "all-in": 30.2,
+          "ante": 2.8,
+          "fold": 0.3
+        },
+        "QJo": {
+          "call": 61.1,
+          "ante": 38.5,
+          "fold": 0.4
+        },
+        "JJ": "ante",
+        "JTs": {
+          "ante": 55.4,
+          "call": 44.6
+        },
+        "J9s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "J7s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "J6s": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "ATo": {
+          "all-in": 99.5,
+          "ante": 0.5
+        },
+        "KTo": {
+          "call": 70.5,
+          "all-in": 28.8,
+          "ante": 0.7
+        },
+        "QTo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "JTo": {
+          "call": 98,
+          "ante": 2
+        },
+        "TT": "call",
+        "T9s": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "T8s": {
+          "call": 99.3,
+          "ante": 0.4,
+          "fold": 0.3
+        },
+        "T7s": "call",
+        "T6s": {
+          "call": 99.6,
+          "fold": 0.4
+        },
+        "A9o": {
+          "call": 50.7,
+          "ante": 49.3
+        },
+        "K9o": {
+          "call": 56.6,
+          "ante": 43.1,
+          "fold": 0.3
+        },
+        "Q9o": {
+          "call": 79.3,
+          "ante": 20.1,
+          "fold": 0.6
+        },
+        "J9o": {
+          "call": 79.7,
+          "ante": 19.8,
+          "fold": 0.5
+        },
+        "T9o": {
+          "call": 99.1,
+          "ante": 0.5,
+          "fold": 0.4
+        },
+        "99": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "98s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "97s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "96s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A8o": {
+          "all-in": 62.4,
+          "call": 37,
+          "ante": 0.6
+        },
+        "K8o": {
+          "call": 76.9,
+          "ante": 22.4,
+          "fold": 0.7
+        },
+        "Q8o": {
+          "call": 76.6,
+          "ante": 22.9,
+          "fold": 0.5
+        },
+        "J8o": {
+          "call": 81.2,
+          "ante": 18.3,
+          "fold": 0.5
+        },
+        "T8o": {
+          "call": 68.8,
+          "ante": 31.2
+        },
+        "98o": {
+          "call": 90.7,
+          "ante": 8.9,
+          "fold": 0.4
+        },
+        "88": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "87s": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "86s": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "A7o": {
+          "all-in": 49.9,
+          "call": 49.5,
+          "ante": 0.6
+        },
+        "K7o": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "Q7o": {
+          "call": 99.1,
+          "fold": 0.5,
+          "ante": 0.4
+        },
+        "J7o": {
+          "call": 71.6,
+          "ante": 27.9,
+          "fold": 0.5
+        },
+        "T7o": {
+          "call": 53.4,
+          "ante": 46.6
+        },
+        "97o": {
+          "call": 76.9,
+          "ante": 22.7,
+          "fold": 0.4
+        },
+        "87o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "77": "call",
+        "76s": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "A6o": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "K6o": {
+          "call": 67.7,
+          "ante": 31.8,
+          "fold": 0.5
+        },
+        "Q6o": {
+          "ante": 60.4,
+          "call": 39.6
+        },
+        "J6o": {
+          "ante": 61.7,
+          "call": 38.3
+        },
+        "T6o": {
+          "ante": 60.5,
+          "call": 39.5
+        },
+        "96o": {
+          "ante": 59,
+          "call": 41
+        },
+        "86o": {
+          "call": 71.2,
+          "ante": 28.5,
+          "fold": 0.3
+        },
+        "76o": {
+          "call": 96.4,
+          "ante": 3.1,
+          "fold": 0.5
+        },
+        "66": {
+          "call": 99.5,
+          "fold": 0.5
+        }
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_all_in:MP_vs_UTG_all_in": {
+      "label": "15 - MP vs UTG All in",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": "fold",
+        "A8s": "fold",
+        "A7s": "fold",
+        "A6s": "fold",
+        "AKo": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "fold": 81.8,
+          "call": 18.2
+        },
+        "KTs": "fold",
+        "K9s": "fold",
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "KQo": "fold",
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": "fold",
+        "QTs": "fold",
+        "Q9s": "fold",
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": "fold",
+        "KJo": "fold",
+        "QJo": "fold",
+        "JJ": "call",
+        "JTs": "fold",
+        "J9s": "fold",
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": "fold",
+        "KTo": "fold",
+        "QTo": "fold",
+        "JTo": "fold",
+        "TT": "call",
+        "T9s": "fold",
+        "T8s": "fold",
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": "fold",
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": "fold",
+        "99": "fold",
+        "98s": "fold",
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": "fold",
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": "fold",
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "fold",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": "fold"
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_all_in:HJ_vs_UTG_all_in": {
+      "label": "16 - HJ vs UTG All in",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": "fold",
+        "A8s": "fold",
+        "A7s": "fold",
+        "A6s": "fold",
+        "AKo": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": "fold",
+        "K9s": "fold",
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "KQo": "fold",
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": "fold",
+        "QTs": "fold",
+        "Q9s": "fold",
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "fold": 90.1,
+          "call": 9.9
+        },
+        "KJo": "fold",
+        "QJo": "fold",
+        "JJ": "call",
+        "JTs": "fold",
+        "J9s": "fold",
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": "fold",
+        "KTo": "fold",
+        "QTo": "fold",
+        "JTo": "fold",
+        "TT": "call",
+        "T9s": "fold",
+        "T8s": "fold",
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": "fold",
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": "fold",
+        "99": "fold",
+        "98s": "fold",
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": "fold",
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": "fold",
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "fold",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": "fold"
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_all_in:CO_vs_UTG_all_in": {
+      "label": "17 - CO vs UTG All in",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": "fold",
+        "A8s": "fold",
+        "A7s": "fold",
+        "A6s": "fold",
+        "AKo": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 70.1,
+          "fold": 29.9
+        },
+        "K9s": "fold",
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "KQo": {
+          "fold": 67.4,
+          "call": 32.6
+        },
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": "fold",
+        "QTs": "fold",
+        "Q9s": "fold",
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "KJo": "fold",
+        "QJo": "fold",
+        "JJ": "call",
+        "JTs": "fold",
+        "J9s": "fold",
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": "fold",
+        "KTo": "fold",
+        "QTo": "fold",
+        "JTo": "fold",
+        "TT": "call",
+        "T9s": "fold",
+        "T8s": "fold",
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": "fold",
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": "fold",
+        "99": "fold",
+        "98s": "fold",
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": "fold",
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": "fold",
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "fold",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": "fold"
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_all_in:BTN_vs_UTG_all_in": {
+      "label": "18 - BTN vs UTG All in",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": "fold",
+        "A8s": "fold",
+        "A7s": "fold",
+        "A6s": "fold",
+        "AKo": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "K9s": "fold",
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "KQo": {
+          "call": 98.9,
+          "fold": 0.7,
+          "ante": 0.4
+        },
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "QTs": "fold",
+        "Q9s": "fold",
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "KJo": "fold",
+        "QJo": "fold",
+        "JJ": "call",
+        "JTs": "fold",
+        "J9s": "fold",
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": {
+          "call": 91.1,
+          "fold": 8.9
+        },
+        "KTo": "fold",
+        "QTo": "fold",
+        "JTo": "fold",
+        "TT": "call",
+        "T9s": "fold",
+        "T8s": "fold",
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": "fold",
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": "fold",
+        "99": "fold",
+        "98s": "fold",
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": "fold",
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": "fold",
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "fold",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": "fold"
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_all_in:HJ_vs_MP_all_in": {
+      "label": "19 - HJ vs MP All in",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": "fold",
+        "A8s": "fold",
+        "A7s": "fold",
+        "A6s": "fold",
+        "AKo": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": "fold",
+        "K9s": "fold",
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "KQo": "fold",
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "fold": 92.9,
+          "call": 7.1
+        },
+        "QTs": "fold",
+        "Q9s": "fold",
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "KJo": "fold",
+        "QJo": "fold",
+        "JJ": "call",
+        "JTs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "J9s": "fold",
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": "fold",
+        "KTo": "fold",
+        "QTo": "fold",
+        "JTo": "fold",
+        "TT": "call",
+        "T9s": "fold",
+        "T8s": "fold",
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": "fold",
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": "fold",
+        "99": "fold",
+        "98s": "fold",
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": "fold",
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": "fold",
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "fold",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": "fold"
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_all_in:CO_vs_MP_all_in": {
+      "label": "20 - CO vs MP All in",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": "fold",
+        "A8s": "fold",
+        "A7s": "fold",
+        "A6s": "fold",
+        "AKo": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "K9s": "fold",
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "KQo": {
+          "call": 98.9,
+          "fold": 0.7,
+          "ante": 0.4
+        },
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "fold": 59.2,
+          "call": 40.8
+        },
+        "QTs": "fold",
+        "Q9s": "fold",
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "KJo": "fold",
+        "QJo": "fold",
+        "JJ": "call",
+        "JTs": {
+          "call": 57.6,
+          "fold": 42.4
+        },
+        "J9s": "fold",
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": {
+          "call": 84.1,
+          "fold": 15.9
+        },
+        "KTo": "fold",
+        "QTo": "fold",
+        "JTo": "fold",
+        "TT": "call",
+        "T9s": "fold",
+        "T8s": "fold",
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": "fold",
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": "fold",
+        "99": "fold",
+        "98s": "fold",
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": "fold",
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": "fold",
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "fold",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": "fold"
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_all_in:BTN_vs_MP_all_in": {
+      "label": "21 - BTN vs MP All in",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": "fold",
+        "A8s": "fold",
+        "A7s": "fold",
+        "A6s": "fold",
+        "AKo": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "K9s": "fold",
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "KQo": {
+          "call": 98.9,
+          "fold": 0.7,
+          "ante": 0.4
+        },
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "QTs": "fold",
+        "Q9s": "fold",
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "KJo": "fold",
+        "QJo": "fold",
+        "JJ": "call",
+        "JTs": "fold",
+        "J9s": "fold",
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "KTo": "fold",
+        "QTo": "fold",
+        "JTo": "fold",
+        "TT": "call",
+        "T9s": "fold",
+        "T8s": "fold",
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": "fold",
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": "fold",
+        "99": "fold",
+        "98s": "fold",
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": "fold",
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": "fold",
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "fold",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": "fold"
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_all_in:CO_vs_HJ_all_in": {
+      "label": "22 - CO vs HJ All in",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": "fold",
+        "A8s": "fold",
+        "A7s": "fold",
+        "A6s": "fold",
+        "AKo": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "K9s": "fold",
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "KQo": {
+          "call": 98.9,
+          "fold": 0.7,
+          "ante": 0.4
+        },
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "QTs": "call",
+        "Q9s": "fold",
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "KJo": "fold",
+        "QJo": "fold",
+        "JJ": "call",
+        "JTs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "J9s": "fold",
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "KTo": "fold",
+        "QTo": "fold",
+        "JTo": "fold",
+        "TT": "call",
+        "T9s": "fold",
+        "T8s": "fold",
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": "fold",
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": "fold",
+        "99": "fold",
+        "98s": "fold",
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": "fold",
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": "fold",
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "fold",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": "fold"
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_all_in:BTN_vs_HJ_all_in": {
+      "label": "23 - BTN vs HJ All in",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": "fold",
+        "A8s": "fold",
+        "A7s": "fold",
+        "A6s": "fold",
+        "AKo": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "K9s": "fold",
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "KQo": {
+          "call": 98.9,
+          "fold": 0.7,
+          "ante": 0.4
+        },
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "QTs": "call",
+        "Q9s": "fold",
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": "fold",
+        "JJ": "call",
+        "JTs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "J9s": "fold",
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "KTo": "fold",
+        "QTo": "fold",
+        "JTo": "fold",
+        "TT": "call",
+        "T9s": "fold",
+        "T8s": "fold",
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": "fold",
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": "fold",
+        "99": "fold",
+        "98s": "fold",
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": "fold",
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": "fold",
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "fold",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": "fold"
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    },
+    "vs_all_in:BTN_vs_CO_all_in": {
+      "label": "24 - BTN vs CO All in",
+      "default_recommendation": "TBD",
+      "hand_actions": {
+        "AA": {
+          "call": 99.7,
+          "fold": 0.3
+        },
+        "AKs": {
+          "call": 99,
+          "fold": 0.6,
+          "ante": 0.4
+        },
+        "AQs": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "AJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "ATs": {
+          "call": 99.6,
+          "ante": 0.4
+        },
+        "A9s": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "A8s": "fold",
+        "A7s": "fold",
+        "A6s": "fold",
+        "AKo": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KK": {
+          "call": 99.3,
+          "fold": 0.4,
+          "ante": 0.3
+        },
+        "KQs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "KJs": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "KTs": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "K9s": "fold",
+        "K8s": "fold",
+        "K7s": "fold",
+        "K6s": "fold",
+        "AQo": {
+          "call": 99.2,
+          "fold": 0.5,
+          "ante": 0.3
+        },
+        "KQo": {
+          "call": 98.9,
+          "fold": 0.7,
+          "ante": 0.4
+        },
+        "QQ": {
+          "call": 99.2,
+          "fold": 0.4,
+          "ante": 0.4
+        },
+        "QJs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "QTs": "call",
+        "Q9s": "fold",
+        "Q8s": "fold",
+        "Q7s": "fold",
+        "Q6s": "fold",
+        "AJo": {
+          "call": 99.5,
+          "ante": 0.5
+        },
+        "KJo": {
+          "call": 99.4,
+          "fold": 0.3,
+          "ante": 0.3
+        },
+        "QJo": {
+          "call": 99.1,
+          "fold": 0.6,
+          "ante": 0.3
+        },
+        "JJ": "call",
+        "JTs": {
+          "call": 99.5,
+          "fold": 0.5
+        },
+        "J9s": "fold",
+        "J8s": "fold",
+        "J7s": "fold",
+        "J6s": "fold",
+        "ATo": {
+          "call": 99.4,
+          "fold": 0.6
+        },
+        "KTo": "fold",
+        "QTo": "fold",
+        "JTo": {
+          "call": 52.8,
+          "fold": 47.2
+        },
+        "TT": "call",
+        "T9s": "fold",
+        "T8s": "fold",
+        "T7s": "fold",
+        "T6s": "fold",
+        "A9o": "fold",
+        "K9o": "fold",
+        "Q9o": "fold",
+        "J9o": "fold",
+        "T9o": "fold",
+        "99": "fold",
+        "98s": "fold",
+        "97s": "fold",
+        "96s": "fold",
+        "A8o": "fold",
+        "K8o": "fold",
+        "Q8o": "fold",
+        "J8o": "fold",
+        "T8o": "fold",
+        "98o": "fold",
+        "88": "fold",
+        "87s": "fold",
+        "86s": "fold",
+        "A7o": "fold",
+        "K7o": "fold",
+        "Q7o": "fold",
+        "J7o": "fold",
+        "T7o": "fold",
+        "97o": "fold",
+        "87o": "fold",
+        "77": "fold",
+        "76s": "fold",
+        "A6o": "fold",
+        "K6o": "fold",
+        "Q6o": "fold",
+        "J6o": "fold",
+        "T6o": "fold",
+        "96o": "fold",
+        "86o": "fold",
+        "76o": "fold",
+        "66": "fold"
+      },
+      "notes": "Extracted from chart image via OCR + color bucketing; verify against source before production use."
+    }
+  }
+}

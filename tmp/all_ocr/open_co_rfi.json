@@ -1,0 +1,1413 @@
+{
+  "ParsedResults": [
+    {
+      "TextOverlay": {
+        "Lines": [
+          {
+            "LineText": "CO Strategy",
+            "Words": [
+              {
+                "WordText": "CO",
+                "Left": 12.0,
+                "Top": 14.0,
+                "Height": 20.0,
+                "Width": 28.0
+              },
+              {
+                "WordText": "Strategy",
+                "Left": 42.0,
+                "Top": 14.0,
+                "Height": 20.0,
+                "Width": 78.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 14.0
+          },
+          {
+            "LineText": "Fold",
+            "Words": [
+              {
+                "WordText": "Fold",
+                "Left": 12.0,
+                "Top": 40.0,
+                "Height": 12.0,
+                "Width": 30.0
+              }
+            ],
+            "MaxHeight": 12.0,
+            "MinTop": 40.0
+          },
+          {
+            "LineText": "Call",
+            "Words": [
+              {
+                "WordText": "Call",
+                "Left": 14.0,
+                "Top": 60.0,
+                "Height": 12.0,
+                "Width": 24.0
+              }
+            ],
+            "MaxHeight": 12.0,
+            "MinTop": 60.0
+          },
+          {
+            "LineText": "8.0ante",
+            "Words": [
+              {
+                "WordText": "8.0ante",
+                "Left": 12.0,
+                "Top": 80.0,
+                "Height": 12.0,
+                "Width": 48.0
+              }
+            ],
+            "MaxHeight": 12.0,
+            "MinTop": 80.0
+          },
+          {
+            "LineText": "AllIn",
+            "Words": [
+              {
+                "WordText": "AllIn",
+                "Left": 14.0,
+                "Top": 100.0,
+                "Height": 12.0,
+                "Width": 28.0
+              }
+            ],
+            "MaxHeight": 12.0,
+            "MinTop": 100.0
+          },
+          {
+            "LineText": "7.94",
+            "Words": [
+              {
+                "WordText": "7.94",
+                "Left": 168.0,
+                "Top": 40.0,
+                "Height": 16.0,
+                "Width": 30.0
+              }
+            ],
+            "MaxHeight": 16.0,
+            "MinTop": 40.0
+          },
+          {
+            "LineText": "67.69",
+            "Words": [
+              {
+                "WordText": "67.69",
+                "Left": 172.0,
+                "Top": 60.0,
+                "Height": 12.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 12.0,
+            "MinTop": 60.0
+          },
+          {
+            "LineText": "0.54",
+            "Words": [
+              {
+                "WordText": "0.54",
+                "Left": 168.0,
+                "Top": 80.0,
+                "Height": 16.0,
+                "Width": 32.0
+              }
+            ],
+            "MaxHeight": 16.0,
+            "MinTop": 80.0
+          },
+          {
+            "LineText": "23.82",
+            "Words": [
+              {
+                "WordText": "23.82",
+                "Left": 168.0,
+                "Top": 100.0,
+                "Height": 14.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 14.0,
+            "MinTop": 100.0
+          },
+          {
+            "LineText": "AA",
+            "Words": [
+              {
+                "WordText": "AA",
+                "Left": 34.0,
+                "Top": 258.0,
+                "Height": 18.0,
+                "Width": 28.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 258.0
+          },
+          {
+            "LineText": "AKO",
+            "Words": [
+              {
+                "WordText": "AKO",
+                "Left": 30.0,
+                "Top": 352.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 352.0
+          },
+          {
+            "LineText": "AKS",
+            "Words": [
+              {
+                "WordText": "AKS",
+                "Left": 120.0,
+                "Top": 258.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 258.0
+          },
+          {
+            "LineText": "KK",
+            "Words": [
+              {
+                "WordText": "KK",
+                "Left": 120.0,
+                "Top": 346.0,
+                "Height": 28.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 28.0,
+            "MinTop": 346.0
+          },
+          {
+            "LineText": "AQs",
+            "Words": [
+              {
+                "WordText": "AQs",
+                "Left": 210.0,
+                "Top": 258.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 258.0
+          },
+          {
+            "LineText": "AJs",
+            "Words": [
+              {
+                "WordText": "AJs",
+                "Left": 302.0,
+                "Top": 258.0,
+                "Height": 18.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 258.0
+          },
+          {
+            "LineText": "ATS",
+            "Words": [
+              {
+                "WordText": "ATS",
+                "Left": 392.0,
+                "Top": 258.0,
+                "Height": 18.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 258.0
+          },
+          {
+            "LineText": "A9s",
+            "Words": [
+              {
+                "WordText": "A9s",
+                "Left": 479.0,
+                "Top": 258.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 258.0
+          },
+          {
+            "LineText": "A8s",
+            "Words": [
+              {
+                "WordText": "A8s",
+                "Left": 569.0,
+                "Top": 258.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 258.0
+          },
+          {
+            "LineText": "KQS",
+            "Words": [
+              {
+                "WordText": "KQS",
+                "Left": 210.0,
+                "Top": 348.0,
+                "Height": 22.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 348.0
+          },
+          {
+            "LineText": "KJs",
+            "Words": [
+              {
+                "WordText": "KJs",
+                "Left": 302.0,
+                "Top": 352.0,
+                "Height": 18.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 352.0
+          },
+          {
+            "LineText": "KTS",
+            "Words": [
+              {
+                "WordText": "KTS",
+                "Left": 392.0,
+                "Top": 352.0,
+                "Height": 18.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 352.0
+          },
+          {
+            "LineText": "K9s",
+            "Words": [
+              {
+                "WordText": "K9s",
+                "Left": 479.0,
+                "Top": 350.0,
+                "Height": 20.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 350.0
+          },
+          {
+            "LineText": "K8S",
+            "Words": [
+              {
+                "WordText": "K8S",
+                "Left": 571.0,
+                "Top": 350.0,
+                "Height": 20.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 350.0
+          },
+          {
+            "LineText": "AQO",
+            "Words": [
+              {
+                "WordText": "AQO",
+                "Left": 28.0,
+                "Top": 444.0,
+                "Height": 20.0,
+                "Width": 42.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 444.0
+          },
+          {
+            "LineText": "KQO",
+            "Words": [
+              {
+                "WordText": "KQO",
+                "Left": 116.0,
+                "Top": 444.0,
+                "Height": 22.0,
+                "Width": 44.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 444.0
+          },
+          {
+            "LineText": "QQ",
+            "Words": [
+              {
+                "WordText": "QQ",
+                "Left": 212.0,
+                "Top": 444.0,
+                "Height": 20.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 444.0
+          },
+          {
+            "LineText": "QJS",
+            "Words": [
+              {
+                "WordText": "QJS",
+                "Left": 300.0,
+                "Top": 444.0,
+                "Height": 22.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 444.0
+          },
+          {
+            "LineText": "AJo",
+            "Words": [
+              {
+                "WordText": "AJo",
+                "Left": 30.0,
+                "Top": 538.0,
+                "Height": 20.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 538.0
+          },
+          {
+            "LineText": "KJo",
+            "Words": [
+              {
+                "WordText": "KJo",
+                "Left": 120.0,
+                "Top": 538.0,
+                "Height": 20.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 538.0
+          },
+          {
+            "LineText": "QJO",
+            "Words": [
+              {
+                "WordText": "QJO",
+                "Left": 210.0,
+                "Top": 536.0,
+                "Height": 24.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 24.0,
+            "MinTop": 536.0
+          },
+          {
+            "LineText": "JJ",
+            "Words": [
+              {
+                "WordText": "JJ",
+                "Left": 306.0,
+                "Top": 538.0,
+                "Height": 22.0,
+                "Width": 26.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 538.0
+          },
+          {
+            "LineText": "QTS",
+            "Words": [
+              {
+                "WordText": "QTS",
+                "Left": 390.0,
+                "Top": 444.0,
+                "Height": 22.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 444.0
+          },
+          {
+            "LineText": "JTs",
+            "Words": [
+              {
+                "WordText": "JTs",
+                "Left": 390.0,
+                "Top": 538.0,
+                "Height": 22.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 538.0
+          },
+          {
+            "LineText": "Q9s",
+            "Words": [
+              {
+                "WordText": "Q9s",
+                "Left": 479.0,
+                "Top": 444.0,
+                "Height": 20.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 444.0
+          },
+          {
+            "LineText": "Q8s",
+            "Words": [
+              {
+                "WordText": "Q8s",
+                "Left": 569.0,
+                "Top": 444.0,
+                "Height": 20.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 444.0
+          },
+          {
+            "LineText": "J9s",
+            "Words": [
+              {
+                "WordText": "J9s",
+                "Left": 481.0,
+                "Top": 538.0,
+                "Height": 20.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 538.0
+          },
+          {
+            "LineText": "J8s",
+            "Words": [
+              {
+                "WordText": "J8s",
+                "Left": 569.0,
+                "Top": 538.0,
+                "Height": 22.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 538.0
+          },
+          {
+            "LineText": "ATO",
+            "Words": [
+              {
+                "WordText": "ATO",
+                "Left": 30.0,
+                "Top": 631.0,
+                "Height": 22.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 631.0
+          },
+          {
+            "LineText": "KTO",
+            "Words": [
+              {
+                "WordText": "KTO",
+                "Left": 120.0,
+                "Top": 631.0,
+                "Height": 20.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 631.0
+          },
+          {
+            "LineText": "QTO",
+            "Words": [
+              {
+                "WordText": "QTO",
+                "Left": 210.0,
+                "Top": 629.0,
+                "Height": 24.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 24.0,
+            "MinTop": 629.0
+          },
+          {
+            "LineText": "JTO",
+            "Words": [
+              {
+                "WordText": "JTO",
+                "Left": 302.0,
+                "Top": 631.0,
+                "Height": 22.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 631.0
+          },
+          {
+            "LineText": "TT",
+            "Words": [
+              {
+                "WordText": "TT",
+                "Left": 396.0,
+                "Top": 631.0,
+                "Height": 20.0,
+                "Width": 26.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 631.0
+          },
+          {
+            "LineText": "A90",
+            "Words": [
+              {
+                "WordText": "A90",
+                "Left": 30.0,
+                "Top": 727.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 727.0
+          },
+          {
+            "LineText": "K90",
+            "Words": [
+              {
+                "WordText": "K90",
+                "Left": 120.0,
+                "Top": 725.0,
+                "Height": 20.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 725.0
+          },
+          {
+            "LineText": "Q90",
+            "Words": [
+              {
+                "WordText": "Q90",
+                "Left": 208.0,
+                "Top": 725.0,
+                "Height": 22.0,
+                "Width": 42.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 725.0
+          },
+          {
+            "LineText": "J90",
+            "Words": [
+              {
+                "WordText": "J90",
+                "Left": 300.0,
+                "Top": 723.0,
+                "Height": 24.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 24.0,
+            "MinTop": 723.0
+          },
+          {
+            "LineText": "A80",
+            "Words": [
+              {
+                "WordText": "A80",
+                "Left": 30.0,
+                "Top": 821.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 821.0
+          },
+          {
+            "LineText": "K80",
+            "Words": [
+              {
+                "WordText": "K80",
+                "Left": 120.0,
+                "Top": 821.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 821.0
+          },
+          {
+            "LineText": "Q80",
+            "Words": [
+              {
+                "WordText": "Q80",
+                "Left": 208.0,
+                "Top": 819.0,
+                "Height": 22.0,
+                "Width": 42.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 819.0
+          },
+          {
+            "LineText": "J80",
+            "Words": [
+              {
+                "WordText": "J80",
+                "Left": 300.0,
+                "Top": 819.0,
+                "Height": 20.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 819.0
+          },
+          {
+            "LineText": "T90",
+            "Words": [
+              {
+                "WordText": "T90",
+                "Left": 388.0,
+                "Top": 721.0,
+                "Height": 26.0,
+                "Width": 42.0
+              }
+            ],
+            "MaxHeight": 26.0,
+            "MinTop": 721.0
+          },
+          {
+            "LineText": "T80",
+            "Words": [
+              {
+                "WordText": "T80",
+                "Left": 390.0,
+                "Top": 817.0,
+                "Height": 22.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 817.0
+          },
+          {
+            "LineText": "T9s",
+            "Words": [
+              {
+                "WordText": "T9s",
+                "Left": 479.0,
+                "Top": 631.0,
+                "Height": 20.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 631.0
+          },
+          {
+            "LineText": "99",
+            "Words": [
+              {
+                "WordText": "99",
+                "Left": 485.0,
+                "Top": 727.0,
+                "Height": 18.0,
+                "Width": 24.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 727.0
+          },
+          {
+            "LineText": "980",
+            "Words": [
+              {
+                "WordText": "980",
+                "Left": 479.0,
+                "Top": 821.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 821.0
+          },
+          {
+            "LineText": "T8s",
+            "Words": [
+              {
+                "WordText": "T8s",
+                "Left": 571.0,
+                "Top": 633.0,
+                "Height": 18.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 633.0
+          },
+          {
+            "LineText": "98s",
+            "Words": [
+              {
+                "WordText": "98s",
+                "Left": 571.0,
+                "Top": 725.0,
+                "Height": 20.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 725.0
+          },
+          {
+            "LineText": "88",
+            "Words": [
+              {
+                "WordText": "88",
+                "Left": 573.0,
+                "Top": 819.0,
+                "Height": 20.0,
+                "Width": 30.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 819.0
+          },
+          {
+            "LineText": "A70",
+            "Words": [
+              {
+                "WordText": "A70",
+                "Left": 30.0,
+                "Top": 915.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 915.0
+          },
+          {
+            "LineText": "K70",
+            "Words": [
+              {
+                "WordText": "K70",
+                "Left": 120.0,
+                "Top": 913.0,
+                "Height": 22.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 913.0
+          },
+          {
+            "LineText": "Q70",
+            "Words": [
+              {
+                "WordText": "Q70",
+                "Left": 210.0,
+                "Top": 913.0,
+                "Height": 22.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 913.0
+          },
+          {
+            "LineText": "J70",
+            "Words": [
+              {
+                "WordText": "J70",
+                "Left": 302.0,
+                "Top": 913.0,
+                "Height": 22.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 913.0
+          },
+          {
+            "LineText": "T7O",
+            "Words": [
+              {
+                "WordText": "T7O",
+                "Left": 390.0,
+                "Top": 911.0,
+                "Height": 24.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 24.0,
+            "MinTop": 911.0
+          },
+          {
+            "LineText": "970",
+            "Words": [
+              {
+                "WordText": "970",
+                "Left": 481.0,
+                "Top": 913.0,
+                "Height": 22.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 913.0
+          },
+          {
+            "LineText": "870",
+            "Words": [
+              {
+                "WordText": "870",
+                "Left": 569.0,
+                "Top": 913.0,
+                "Height": 22.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 913.0
+          },
+          {
+            "LineText": "A60",
+            "Words": [
+              {
+                "WordText": "A60",
+                "Left": 30.0,
+                "Top": 1009.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 1009.0
+          },
+          {
+            "LineText": "K6o",
+            "Words": [
+              {
+                "WordText": "K6o",
+                "Left": 120.0,
+                "Top": 1009.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 1009.0
+          },
+          {
+            "LineText": "Q60",
+            "Words": [
+              {
+                "WordText": "Q60",
+                "Left": 210.0,
+                "Top": 1009.0,
+                "Height": 18.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 1009.0
+          },
+          {
+            "LineText": "J60",
+            "Words": [
+              {
+                "WordText": "J60",
+                "Left": 300.0,
+                "Top": 1009.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 1009.0
+          },
+          {
+            "LineText": "T60",
+            "Words": [
+              {
+                "WordText": "T60",
+                "Left": 390.0,
+                "Top": 1007.0,
+                "Height": 22.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 1007.0
+          },
+          {
+            "LineText": "960",
+            "Words": [
+              {
+                "WordText": "960",
+                "Left": 479.0,
+                "Top": 1009.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 1009.0
+          },
+          {
+            "LineText": "860",
+            "Words": [
+              {
+                "WordText": "860",
+                "Left": 569.0,
+                "Top": 1009.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 1009.0
+          },
+          {
+            "LineText": "Fold 7.94%",
+            "Words": [
+              {
+                "WordText": "Fold",
+                "Left": 44.0,
+                "Top": 1091.0,
+                "Height": 24.0,
+                "Width": 42.0
+              },
+              {
+                "WordText": "7.94",
+                "Left": 89.0,
+                "Top": 1091.0,
+                "Height": 24.0,
+                "Width": 63.0
+              },
+              {
+                "WordText": "%",
+                "Left": 89.0,
+                "Top": 1091.0,
+                "Height": 24.0,
+                "Width": 63.0
+              }
+            ],
+            "MaxHeight": 25.0,
+            "MinTop": 1091.0
+          },
+          {
+            "LineText": "Call 67.69%",
+            "Words": [
+              {
+                "WordText": "Call",
+                "Left": 232.0,
+                "Top": 1091.0,
+                "Height": 24.0,
+                "Width": 39.0
+              },
+              {
+                "WordText": "67.69",
+                "Left": 274.0,
+                "Top": 1090.0,
+                "Height": 25.0,
+                "Width": 72.0
+              },
+              {
+                "WordText": "%",
+                "Left": 274.0,
+                "Top": 1090.0,
+                "Height": 25.0,
+                "Width": 72.0
+              }
+            ],
+            "MaxHeight": 25.0,
+            "MinTop": 1090.0
+          },
+          {
+            "LineText": "8.0ante 0.54%",
+            "Words": [
+              {
+                "WordText": "8.0ante",
+                "Left": 427.0,
+                "Top": 1093.0,
+                "Height": 22.0,
+                "Width": 77.0
+              },
+              {
+                "WordText": "0.54",
+                "Left": 507.0,
+                "Top": 1093.0,
+                "Height": 22.0,
+                "Width": 60.0
+              },
+              {
+                "WordText": "%",
+                "Left": 507.0,
+                "Top": 1093.0,
+                "Height": 22.0,
+                "Width": 60.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 1093.0
+          },
+          {
+            "LineText": "RANGECONVERTER",
+            "Words": [
+              {
+                "WordText": "RANGECONVERTER",
+                "Left": 651.0,
+                "Top": 132.0,
+                "Height": 18.0,
+                "Width": 146.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 132.0
+          },
+          {
+            "LineText": "A7S",
+            "Words": [
+              {
+                "WordText": "A7S",
+                "Left": 661.0,
+                "Top": 258.0,
+                "Height": 18.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 258.0
+          },
+          {
+            "LineText": "K7S",
+            "Words": [
+              {
+                "WordText": "K7S",
+                "Left": 661.0,
+                "Top": 352.0,
+                "Height": 18.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 352.0
+          },
+          {
+            "LineText": "Q7s",
+            "Words": [
+              {
+                "WordText": "Q7s",
+                "Left": 659.0,
+                "Top": 444.0,
+                "Height": 22.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 444.0
+          },
+          {
+            "LineText": "A6s",
+            "Words": [
+              {
+                "WordText": "A6s",
+                "Left": 749.0,
+                "Top": 258.0,
+                "Height": 18.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 258.0
+          },
+          {
+            "LineText": "KGs",
+            "Words": [
+              {
+                "WordText": "KGs",
+                "Left": 751.0,
+                "Top": 350.0,
+                "Height": 20.0,
+                "Width": 34.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 350.0
+          },
+          {
+            "LineText": "Q6s",
+            "Words": [
+              {
+                "WordText": "Q6s",
+                "Left": 749.0,
+                "Top": 444.0,
+                "Height": 20.0,
+                "Width": 40.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 444.0
+          },
+          {
+            "LineText": "J7S",
+            "Words": [
+              {
+                "WordText": "J7S",
+                "Left": 661.0,
+                "Top": 536.0,
+                "Height": 24.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 24.0,
+            "MinTop": 536.0
+          },
+          {
+            "LineText": "J6s",
+            "Words": [
+              {
+                "WordText": "J6s",
+                "Left": 751.0,
+                "Top": 538.0,
+                "Height": 20.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 538.0
+          },
+          {
+            "LineText": "T7S",
+            "Words": [
+              {
+                "WordText": "T7S",
+                "Left": 661.0,
+                "Top": 631.0,
+                "Height": 22.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 631.0
+          },
+          {
+            "LineText": "T6s",
+            "Words": [
+              {
+                "WordText": "T6s",
+                "Left": 749.0,
+                "Top": 631.0,
+                "Height": 20.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 631.0
+          },
+          {
+            "LineText": "97s",
+            "Words": [
+              {
+                "WordText": "97s",
+                "Left": 661.0,
+                "Top": 725.0,
+                "Height": 22.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 725.0
+          },
+          {
+            "LineText": "96s",
+            "Words": [
+              {
+                "WordText": "96s",
+                "Left": 751.0,
+                "Top": 725.0,
+                "Height": 20.0,
+                "Width": 36.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 725.0
+          },
+          {
+            "LineText": "87s",
+            "Words": [
+              {
+                "WordText": "87s",
+                "Left": 661.0,
+                "Top": 819.0,
+                "Height": 22.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 819.0
+          },
+          {
+            "LineText": "77",
+            "Words": [
+              {
+                "WordText": "77",
+                "Left": 663.0,
+                "Top": 911.0,
+                "Height": 24.0,
+                "Width": 28.0
+              }
+            ],
+            "MaxHeight": 24.0,
+            "MinTop": 911.0
+          },
+          {
+            "LineText": "86s",
+            "Words": [
+              {
+                "WordText": "86s",
+                "Left": 751.0,
+                "Top": 819.0,
+                "Height": 22.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 22.0,
+            "MinTop": 819.0
+          },
+          {
+            "LineText": "76s",
+            "Words": [
+              {
+                "WordText": "76s",
+                "Left": 749.0,
+                "Top": 911.0,
+                "Height": 24.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 24.0,
+            "MinTop": 911.0
+          },
+          {
+            "LineText": "760",
+            "Words": [
+              {
+                "WordText": "760",
+                "Left": 659.0,
+                "Top": 1007.0,
+                "Height": 20.0,
+                "Width": 38.0
+              }
+            ],
+            "MaxHeight": 20.0,
+            "MinTop": 1007.0
+          },
+          {
+            "LineText": "66",
+            "Words": [
+              {
+                "WordText": "66",
+                "Left": 755.0,
+                "Top": 1009.0,
+                "Height": 18.0,
+                "Width": 26.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 1009.0
+          },
+          {
+            "LineText": "Allln 23.82%",
+            "Words": [
+              {
+                "WordText": "Allln",
+                "Left": 651.0,
+                "Top": 1095.0,
+                "Height": 18.0,
+                "Width": 45.0
+              },
+              {
+                "WordText": "23.82",
+                "Left": 698.0,
+                "Top": 1095.0,
+                "Height": 18.0,
+                "Width": 73.0
+              },
+              {
+                "WordText": "%",
+                "Left": 698.0,
+                "Top": 1095.0,
+                "Height": 18.0,
+                "Width": 73.0
+              }
+            ],
+            "MaxHeight": 18.0,
+            "MinTop": 1095.0
+          }
+        ],
+        "HasOverlay": true
+      },
+      "TextOrientation": "0",
+      "FileParseExitCode": 1,
+      "ParsedText": "CO Strategy\nFold\nCall\n8.0ante\nAllIn\n7.94\n67.69\n0.54\n23.82\nAA\nAKO\nAKS\nKK\nAQs\nAJs\nATS\nA9s\nA8s\nKQS\nKJs\nKTS\nK9s\nK8S\nAQO\nKQO\nQQ\nQJS\nAJo\nKJo\nQJO\nJJ\nQTS\nJTs\nQ9s\nQ8s\nJ9s\nJ8s\nATO\nKTO\nQTO\nJTO\nTT\nA90\nK90\nQ90\nJ90\nA80\nK80\nQ80\nJ80\nT90\nT80\nT9s\n99\n980\nT8s\n98s\n88\nA70\nK70\nQ70\nJ70\nT7O\n970\n870\nA60\nK6o\nQ60\nJ60\nT60\n960\n860\nFold 7.94%\nCall 67.69%\n8.0ante 0.54%\nRANGECONVERTER\nA7S\nK7S\nQ7s\nA6s\nKGs\nQ6s\nJ7S\nJ6s\nT7S\nT6s\n97s\n96s\n87s\n77\n86s\n76s\n760\n66\nAllln 23.82%",
+      "ErrorMessage": "",
+      "ErrorDetails": ""
+    }
+  ],
+  "OCRExitCode": 1,
+  "IsErroredOnProcessing": false,
+  "ProcessingTimeInMilliseconds": "2687",
+  "SearchablePDFURL": "Searchable PDF not generated as it was not requested."
+}
